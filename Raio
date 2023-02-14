@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+int main (){
+	setlocale(LC_ALL,"portuguese");
+	float custoMerc, frete, despesas, valorVenda, valorTotal, lucro, porcentagem;
+	
+	printf ("Insira o valor da mercadoria: ");
+	scanf ("%f", &custoMerc);
+	printf ("\nInsira o valor do frete: ");
+	scanf ("%f", &frete);
+	printf ("\nInsira o valor das despesas: ");
+	scanf ("%f", &despesas);
+	printf ("\nInsira o valor da venda: ");
+	scanf ("%f", &valorVenda);
+	valorTotal = custoMerc + frete + despesas;
+	lucro = valorVenda - valorTotal;
+	printf ("Seu lucro é de %.2f", lucro);
+	
+}
