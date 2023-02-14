@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <locale.h>
+int main (){
+	int n, dobro = 2, resultado;
+	setlocale(LC_ALL,"portuguese");
+	
+	printf ("Insira um valor: ");
+	scanf ("%d", &n);
+	resultado = n * dobro;
+	printf ("O dobro de %d é %d", n, resultado);
+	
+	
+}
