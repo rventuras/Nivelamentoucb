@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <locale.h>
+int main (){
+	setlocale(LC_ALL,"portuguese");
+	float km, valorTotal, b1 = 1.80, b2 = 2.30;
+	int bandeira;
+	printf ("Insira bandeira 1 ou 2: ");
+	scanf ("%d", &bandeira);
+	switch(bandeira)
+	{
+	
+	case (1):
+		printf ("Insira a quantidade de km percorrida: ");
+		scanf ("%f", &km);
+		valorTotal = b1 * km;
+		printf ("Valor da corrida é %.2f", valorTotal);
+		break;
+	case (2):
+		printf ("Insira a quantidade de km percorrida: ");
+		scanf ("%f", &km);
+		valorTotal = b2 * km;
+		printf ("Valor da corrida é %.2f", valorTotal);
+	break;
+	default:
+	printf ("Valor Invalido!");
+	break;
+}
+	
+}
