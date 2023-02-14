@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <locale.h>
+int main (){
+	setlocale(LC_ALL, "portuguese");
+	
+	int n1, n2;
+	int soma, sub;
+	int multi, div;
+	printf ("Insira número 1 e número 2: ");
+	scanf ("%d%d", &n1,&n2);
+	soma = n1 + n2;
+	multi = n1 * n2;
+	div = n1 / n2;
+	sub = n1 -n2;
+	printf ("Soma = %d\nSubtração = %d\nMultiplicação = %d\nDivisão = %d", soma, sub, multi, div);
+}
